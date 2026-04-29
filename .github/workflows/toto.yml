@@ -12,3 +12,13 @@ jobs:
               run: |
                 echo "Hello world!"
                 ls -lah
+            - name: step 2
+              run: echo "Step 2"
+    salut:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Hello world action step
+              run: |
+                echo "Hello world!"
+                ls -lah
+               
