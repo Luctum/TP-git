@@ -14,6 +14,51 @@ jobs:
                 ls -lah
             - name: step 2
               run: exit 1
+    helloworld2:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Hello world action step
+              run: |
+                echo "Hello world!"
+                ls -lah
+            - name: step 2
+              run: exit 1
+    helloworld3:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Hello world action step
+              run: |
+                echo "Hello world!"
+                ls -lah
+            - name: step 2
+              run: exit 1
+    helloworld4:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Hello world action step
+              run: |
+                echo "Hello world!"
+                ls -lah
+            - name: step 2
+              run: exit 1
+    helloworld5:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Hello world action step
+              run: |
+                echo "Hello world!"
+                ls -lah
+            - name: step 2
+              run: exit 1
+    helloworld6:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Hello world action step
+              run: |
+                echo "Hello world!"
+                ls -lah
+            - name: step 2
+              run: exit 1
     salut:
         needs: helloworld
         runs-on: ubuntu-latest
@@ -56,7 +101,7 @@ jobs:
                 echo "Hello world!"
                 ls -lah
     salut6:
-        needs: [salut4, salut3]
+        needs: [salut4, salut3, helloworld3, helloworld6]
         runs-on: ubuntu-latest
         steps:
             - name: Hello world action step
