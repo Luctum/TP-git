@@ -22,4 +22,44 @@ jobs:
               run: |
                 echo "Hello world!"
                 ls -lah
-               
+    salut2:
+        needs: helloworld
+        runs-on: ubuntu-latest
+        steps:
+            - name: Hello world action step
+              run: |
+                echo "Hello world!"
+                ls -lah
+    salut3:
+        needs: salut2
+        runs-on: ubuntu-latest
+        steps:
+            - name: Hello world action step
+              run: |
+                echo "Hello world!"
+                ls -lah
+    salut4:
+        needs: salut2
+        runs-on: ubuntu-latest
+        steps:
+            - name: Hello world action step
+              run: |
+                echo "Hello world!"
+                ls -lah
+
+    salut5:
+        needs: salut4
+        runs-on: ubuntu-latest
+        steps:
+            - name: Hello world action step
+              run: |
+                echo "Hello world!"
+                ls -lah
+    salut6:
+        needs: [salut4, salut3]
+        runs-on: ubuntu-latest
+        steps:
+            - name: Hello world action step
+              run: |
+                echo "Hello world!"
+                ls -lah
