@@ -8,12 +8,11 @@ jobs:
     helloworld:
         runs-on: ubuntu-latest
         steps:
+            - uses: actions/checkout@v6
             - name: Hello world action step
               run: |
                 echo "Hello world!"
                 ls -lah
-            - name: step 2
-              run: exit 1
     helloworld2:
         runs-on: ubuntu-latest
         steps:
