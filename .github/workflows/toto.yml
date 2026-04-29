@@ -8,7 +8,7 @@ jobs:
     helloworld:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v6
+            - uses: actions/checkout@v2
             - name: Hello world action step
               run: |
                 echo "Hello world!"
